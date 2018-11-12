@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Automated Warehouse System</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      
+      body {
+        text-align: center;
+        min-width: 500px;
+      }
+
+	
+    </style>
+   
+ <script src="http://code.jquery.com/jquery.min.js"></script>
+    
+<script>
+ 
+      // log function
+      log = function(data){
+        $("div#terminal").prepend("</br>" +data);
+        console.log(data);
+      };
+ 
+      $(document).ready(function () {
+        $("div#message_details").hide()
+        var ws;
+	var msg;
+ 
+        $("#open").click(function(evt) {
+          evt.preventDefault();
+ 
+          var host = $("#host").val();
+          var port = $("#port").val();
+          var uri = $("#uri").val();
+	  var i  = 0;
+
+          // create websocket instance
+          ws = new WebSocket("ws://" + host + ":" + port + uri);
+           
+          // Handle incoming websocket message callback
+          ws.onmessage = function(evt) {
+		 
+            log("Message Received: " + evt.data);
+            //alert("message received: " + evt.data);
+		
+		if(msg == "latest_item")
+		{
+		$("#latest_item").css("background", "#f0b800");
+		
+		document.getElementById("latest_item").value= evt.data;
+		
+		
+		}
+
+		
+            };
+ 
+          // Close Websocket callback
+          ws.onclose = function(evt) {
+            log("***Connection Closed***");
+            alert("Connection close");
+            $("#host").css("background", "#ff0000"); 
+            $("#port").css("background", "#ff0000"); 
+            $("#uri").css("background",  "#ff0000");
+            $("div#message_details").empty();
+ 
+            };
+ 
+          // Open Websocket callback
+          ws.onopen = function(evt) { 
+            $("#host").css("background", "#00ff00"); 
+            $("#port").css("background", "#00ff00"); 
+            $("#uri").css("background", "#00ff00");
+            $("div#message_details").show();
+	    $("div#message_details1").show();
+            log("***Connection Opened***");
+          };
+        });send
+ 
+        // Send websocket message function
+        $("#send").click(function(evt) {
+	    msg = "latest_item";
+            log("Sending Message:latest_item");
+            ws.send("latest_item");
+        });
+
+      });
+    </script>
+  </head>
+ 
+  <body>
+    <h1>Automated Warehouse System</h1>
+    <div id="connection_details" >
+      <label for="host">host:</label>
+      <input type="text" id="host" value="localhost" style="background:#ff0000;"/><br />
+      <label for="port">port:</label>
+      <input type="text" id="port" value="8888" style="background:#ff0000;"/><br />
+      <label for="uri">uri  : </label>
+      <input type="text" id="uri" value="/ws" style="background:#ff0000;"/><br />
+  <br/>    <input type="submit" id="open" value="open" />
+    </div>
+
+	<div class="tabs">
+  
+    <div id="message_details">
+        </br>
+	<input type="submit" id="send" value="Refresh" />
+	<label for="latest_item">Latest Item:</label>
+        <input type="text" id="latest_item" value=""/> 
+	
+
+
+    </div>
+
+  </body>
+</html>
