@@ -1,6 +1,6 @@
 # Automated-Warehouse-System
 
-## Repository for the super project -'Automated Warehouse System using AWS and Robotic Arm' for the course EID (ECEN 5053-002)
+## Repository for the Super project -'Automated Warehouse System using Robotic Arm and AWS with Image Processing' for the course EID (ECEN 5053-002) at University of Colorado Boulder
 
 ### Names of Developers and Students-
 
