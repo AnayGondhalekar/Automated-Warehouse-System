@@ -56,5 +56,5 @@ In this project an automated warehouse system is developed. It uses 2 Raspberry 
 2. https://aws.amazon.com/rekognition/
 3. https://stackoverflow.com/questions/15085864/how-to-upload-a-file-to-directory-in-s3-bucket-using-boto
 4. https://docs.aws.amazon.com/lambda/latest/dg/getting-started-create-function.html
-
+5. https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-create-queue.html
 
