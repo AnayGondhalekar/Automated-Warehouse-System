@@ -1,6 +1,8 @@
 # Automated-Warehouse-System
 
-## Repository for the Super project -'Automated Warehouse System using Robotic Arm and AWS with Image Processing' for the course EID (ECEN 5053-002) at University of Colorado Boulder
+## Repository for the Super project -'Automated Warehouse System using Robotic Arm and AWS with Image Processing' 
+## For the course EID (ECEN 5053-002) at University of Colorado Boulder
+## By- Anay Gondhalekar, Nikhil Divekar, Shubham Jaiswal
 
 ### Names of Developers and Students-
 
