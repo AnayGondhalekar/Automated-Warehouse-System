@@ -6,7 +6,7 @@
 
 This project is a result of the efforts of-
 #### Anay Gondhalekar - MQTT, Client Side Code, Configuring Robotic Arm,Lambda Function, HTML page, Extra credit
-#### Nikhil Divekar - UI on Client Side, Precise Pick-n-Place of Robotic Arm, Image Processing(AWS), SQS, Extra credit
+#### Nikhil Divekar - UI on Client Side, Precise Pick-n-Place of Robotic Arm, Image Processing(AWS Rekognition), SQS, Extra credit
 #### Shubham Jaiswal - Robotic Arm Assembly,Lambda Function, UI on Client Side, Server Code, Websockets, Extra credit
 
 #### Project Information-
