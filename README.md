@@ -53,3 +53,8 @@ In this project an automated warehouse system is developed. It uses 2 Raspberry 
 
 #### References-
 1. https://www.wikihow.com/Use-a-USB-Robotic-Arm-with-a-Raspberry-Pi-(Maplin)
+2. https://aws.amazon.com/rekognition/
+3. https://stackoverflow.com/questions/15085864/how-to-upload-a-file-to-directory-in-s3-bucket-using-boto
+4. https://docs.aws.amazon.com/lambda/latest/dg/getting-started-create-function.html
+
+
