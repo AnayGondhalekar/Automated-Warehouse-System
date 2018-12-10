@@ -49,7 +49,7 @@ In this project an automated warehouse system is developed. It uses 2 Raspberry 
 7. Improved effeciency by discarding unmatching requests those are not servicing
 8. Displaying the current warehouse image on HTML page and QT
 9. Storing images in an S3 Bucket
-10.Drop down button in QT and non editable Cart for not accepting Invalid Requests
+10. Drop down button in QT and non editable Cart for not accepting Invalid Requests
 
 #### References-
 1. https://www.wikihow.com/Use-a-USB-Robotic-Arm-with-a-Raspberry-Pi-(Maplin)
